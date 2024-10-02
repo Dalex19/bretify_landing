@@ -12,8 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        clashDisplay: ['ClashDisplay-bold', 'sans-serif'],
+        clashDisplayRegular: ['ClashDisplay-regular', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    require('daisyui'),
+  ],
 };
 export default config;
