@@ -43,3 +43,16 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+
+.test-overlaping {
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 490px) {
+  
+ .test-overlaping {
+  position: sticky;
+  top: -48rem;
+ }
+}

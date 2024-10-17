@@ -28,14 +28,20 @@ export default function NavbarMob() {
 
   return (
     <div
-      className={`h-12 w-[90%] fixed px-2 flex justify-between items-center top-0 transition-all duration-300 ${
+      className={`h-12 w-[90%] fixed px-2 flex justify-between items-center top-0 left-1/2 transform -translate-x-1/2 transition-all duration-300 z-[100] ${
         isScrolled
           ? "backdrop-blur-xl text-black bg-black/30"
           : "bg-transparent"
       }`}
     >
-      <SideMenu />
-      <h2 className="font-bold font-clashDisplay text-black">B R E T I F Y</h2>
+      <SideMenu isScrolled={isScrolled} />
+      <h2
+        className={`font-bold font-clashDisplay ${
+          isScrolled ? "text-white" : "text-black"
+        }`}
+      >
+        B R E T I F Y
+      </h2>
     </div>
   );
 }

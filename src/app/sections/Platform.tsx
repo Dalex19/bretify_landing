@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Platform() {
   return (
-    <section className="md:h-screen w-full md:py-10 md:px-32 flex justify-center" id="platform">
+    <section className="test-overlaping md:h-screen w-full md:py-10 px-4 md:px-32 flex justify-center" id="platform">
     <div className="md:flex-1 rounded-xl grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-y-4 md:gap-4">
         <div className=" bg-[#E1E2F3] py-8 w-full md:col-span-3 md:row-span-2 rounded-lg md:py-6 md:px-4 flex flex-col md:flex-row gap-6">
           
@@ -122,22 +122,22 @@ function AvatarGroup() {
       <div className="avatar-group -space-x-6 rtl:space-x-reverse ">
         <div className="avatar">
           <div className="w-[35px]">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_1" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-[35px]">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_2" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-[35px]">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_3"/>
           </div>
         </div>
         <div className="avatar">
           <div className="w-[35px]">
-            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_4"/>
           </div>
         </div>
       </div>

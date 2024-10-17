@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-const SideMenu = () => {
+const SideMenu = ({ isScrolled }: { isScrolled: boolean }) => {
   return (
     <div className="drawer w-auto">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <label htmlFor="my-drawer" className=" drawer-button">
           <Image
-            src="/images/hamburger-icon.svg"
+            src={isScrolled ?"/images/hamburger-icon_white.svg" : "/images/hamburger-icon.svg"}
             className="w-10 drawer-button transition-all active:scale-125"
             alt="menu_icon"
             width={40}
