@@ -3,10 +3,12 @@ import Image from "next/image";
 
 export default function Platform() {
   return (
-    <section className="test-overlaping md:h-screen w-full md:py-10 px-4 md:px-32 flex justify-center" id="platform">
-    <div className="md:flex-1 rounded-xl grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-y-4 md:gap-4">
+    <section
+      className="test-overlaping md:h-screen w-full md:py-10 px-4 md:px-32 flex justify-center"
+      id="platform"
+    >
+      <div className="md:flex-1 rounded-xl grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-y-4 md:gap-4">
         <div className=" bg-[#E1E2F3] py-8 w-full md:col-span-3 md:row-span-2 rounded-lg md:py-6 md:px-4 flex flex-col md:flex-row gap-6">
-          
           <div className="hidden md:flex h-[85%] w-[260px] bg-black rounded-xl overflow-hidden ">
             <Image
               src="/images/worker.jpg"
@@ -87,7 +89,8 @@ export default function Platform() {
         <div className="bg-[#fde6e9] col-span-2 row-span-1 rounded-lg flex flex-col md:flex-row overflow-hidden">
           <div className="flex flex-col justify-around items-center flex-[3] ">
             <h2 className="text-black font-clashDisplayRegular text-xl md:text-2xl leading-5  text-center">
-              Encuentra empleo <br className="block md:hidden" /> fácilmente <br className="hidden md:block" /> en una sola app
+              Encuentra empleo <br className="block md:hidden" /> fácilmente{" "}
+              <br className="hidden md:block" /> en una sola app
             </h2>
             <p className="w-[80%] leading-5 text-center text-gray-500">
               Bretify te ayuda a buscar empleo rápidamente y a conectar con
@@ -108,7 +111,7 @@ export default function Platform() {
             <AvatarGroup />
           </div>
         </div>
-      </div> 
+      </div>
     </section>
   );
 }
@@ -122,22 +125,42 @@ function AvatarGroup() {
       <div className="avatar-group -space-x-6 rtl:space-x-reverse ">
         <div className="avatar">
           <div className="w-[35px]">
-            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_1" />
+            <Image
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              alt="client_1"
+              width={35}
+              height={10}
+            />
           </div>
         </div>
         <div className="avatar">
           <div className="w-[35px]">
-            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_2" />
+            <Image
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              alt="client_2"
+              width={35}
+              height={10}
+            />
           </div>
         </div>
         <div className="avatar">
           <div className="w-[35px]">
-            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_3"/>
+            <Image
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              alt="client_3"
+              width={35}
+              height={10}
+            />
           </div>
         </div>
         <div className="avatar">
           <div className="w-[35px]">
-            <Image src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt="client_4"/>
+            <Image
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              alt="client_4"
+              width={35}
+              height={10}
+            />
           </div>
         </div>
       </div>

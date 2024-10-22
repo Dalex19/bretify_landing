@@ -4,6 +4,8 @@ import Platform from "./sections/Platform";
 
 import Navbar from "./components/Navbar";
 import AboutUs from "./sections/AboutUs";
+import Collab from "./sections/Collab";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <div>
         <Platform />
         <AboutUs />
+        <Collab />
+      <Footer />
       </div>
     </div>
   );

@@ -56,3 +56,37 @@ body {
   top: -48rem;
  }
 }
+
+.shadow-bujia {
+  filter: drop-shadow(4px 4px 10px rgba(239, 243, 26, 0.5));
+  -webkit-filter: drop-shadow(4px 4px 10px rgba(239, 243, 26, 0.5));
+}
+
+@keyframes opacityPulse {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-opacity-pulse {
+  animation: opacityPulse 2.5s infinite;
+  -webkit-animation: opacityPulse 2.5s infinite;
+}
+
+@keyframes bujiaGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(255, 223, 0, 0.4);
+    opacity: 0.2;
+  }
+  50% {
+    box-shadow: 0 0 60px rgba(255, 223, 0, 0.7);
+    opacity: 1;
+  }
+}
+
+.animate-bujia-glow {
+  animation: bujiaGlow 3s infinite;
+}
